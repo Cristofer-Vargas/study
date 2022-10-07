@@ -11,19 +11,25 @@
 </head>
 <body>
 
-    <h1>
-        Bom dia
-    </h1>
-
-    <p>
-        Começando...
-    </p>
-
-    <?php
+    <div id="tit">
+        <h1>
+            Bom dia
+        </h1>
+    </div>
+    <div id="par">
+        <p>
+            Começando códigos...
+        </p>
+    </div>
+    <div id="php">
+        <?php
 
         echo "Olá mundo PHP";
+        echo "<br>";
+        echo "Olá mundo PHP";
 
-    ?>
 
+        ?>
+    </div>
 </body>
 </html>
