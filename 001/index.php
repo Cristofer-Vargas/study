@@ -13,7 +13,7 @@
 
     <div id="tit">
         <h1>
-            Bom dia
+            Bom dia PHP
         </h1>
     </div>
     <div id="par">
