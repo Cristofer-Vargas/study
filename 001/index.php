@@ -1,35 +1,50 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>001</title>
+<?php
 
-    <link rel="stylesheet" href="001.css">
+// 4º Exercício
 
-</head>
-<body>
+$a = 100;
+$b = 250;
+$c = $a + $b;
+$c++;           // Ou daria para dar echo ++$c que encrementa antes de apresentar
+echo$c;
 
-    <div id="tit">
-        <h1>
-            Bom dia PHP
-        </h1>
-    </div>
-    <div id="par">
-        <p>
-            Começando códigos...
-        </p>
-    </div>
-    <div id="php">
-        <?php
+    // ou
 
-        echo "Olá mundo PHP";
-        echo "<br>";
-        echo "Olá mundo PHP";
+    //$a = 100;
+    //$b = 250;
+    //echo $c = $a + $b +1 ;
 
 
-        ?>
-    </div>
-</body>
-</html>
+// 3º Exercício
+
+// $a = 20;
+// echo $a;
+// echo '<br>';
+// $a ++;
+// echo $a;
+
+    // ou
+
+    //$a = 20;     
+    //echo $a++;        Ele da echo em $a, depois encremnte ++ (mais um) que para o próximo, ele ja estara valendo 21
+    //echo $a;
+
+    // ou
+
+    //$a = 20;
+    //echo ++$a;        Encrementa antes e da echo no valor já encrementado
+
+
+// 2º Exercício
+
+// $a = 100;
+// $b = 3 * $a;
+// echo($b);
+
+
+// 1º Exercício
+
+// $a = 1000;
+// echo '<br>';
+// $b = $a / 2;
+// echo($b);
