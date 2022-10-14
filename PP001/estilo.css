@@ -1,0 +1,73 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+/* body{
+    
+} */
+h1{
+    padding-bottom: 30px;
+}
+#MainContain{
+    color: white;
+    font-size: 24px;
+}
+
+#PTableContain{
+    margin-right: 200px;
+}
+
+.PContain{
+    padding: 400px 0px 400px 0px;
+    margin: 0px 20px 0px 100px;
+    text-align: right;
+
+}
+
+.PSubContain{
+    padding: 0px 200px 400px 200px;
+    text-align: right;
+}
+
+#PImgContain{
+    width: 220px;
+}
+
+.SContain{
+    padding: 400px 0px 400px 0px;
+    margin: 0px 100px 0px 100px;
+    text-align: left;
+}
+
+.TContain{
+    padding: 400px 0px 400px 0px;
+    margin: 0px 100px 0px 100px;
+    text-align: right;
+}
+
+#PColorContain{
+    background-color: #91204d;
+}
+
+#SColorContain{
+    background-color: #e4844a;
+}
+
+#TColorContain{
+    background-color: #e8bf56;
+}
+
+#IconIns{
+    width: 10px;
+}
+
+footer{
+    background-color: #e2f7ce;
+    color: black;
+    text-align: center;
+}
+
+footer > div{
+    padding: 10%;
+}
