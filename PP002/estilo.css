@@ -1,0 +1,86 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* Containers Flex */
+.FlexContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 1% 0% 1%;
+
+}
+
+/* Navegação */
+    /* nav{
+        
+    } */
+
+/* Header */
+    #Header{
+        display: flex;
+        align-content: center;
+        
+        /* margin: 2% 0% 2% 0%; */
+        height: 100px;
+        font-size: 18pt;
+        
+        /* border-style: solid;
+        border-color: gray; */
+    }
+
+    header{
+        padding-top: 3%;
+        text-align: center;
+        background-color: black;
+        color: white;
+    }
+
+    #HeaderLogotipo{
+        padding-bottom: 3%;
+    }
+
+/* Main Section */
+    #SectionMain{
+        height: 100%;
+        margin: 0;
+        padding: 1%;
+        /* border-style: solid;
+        border-color: gray; */
+    }
+
+    /* h1{
+        border-style: hidden hidden dashed hidden;
+        border-width: 2px;
+    } */
+
+    #MainDiv1, #MainDiv2, #MainDiv3{
+        border-style: solid hidden hidden hidden;
+        border-width: 10px;
+        border-radius: 12px;
+
+        background-color: rgb(226, 226, 226);
+        color: rgb(0, 0, 0);
+        
+        text-align: center;
+    }
+
+    #MainDiv1, #MainDiv3{
+        width: 18%;
+    }
+
+    #MainDiv2{
+        width: 60%;
+    }
+
+#Footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
