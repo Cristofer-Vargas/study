@@ -1,0 +1,49 @@
+@font-face{
+	font-family: KarlaBold;
+	src: url(KarlaBold.ttf);
+}
+
+@font-face{
+	font-family: KarlaBoldItalic;
+	src: url(KarlaBoldItalic.ttf);
+}
+
+@font-face{
+	font-family: KarlaExtraBold;
+	src: url(KarlaExtraBold.ttf);
+}
+
+@font-face{
+	font-family: KarlaExtraBoldItalic;
+	src: url(KarlaExtraBoldItalic.ttf);
+}
+
+@font-face{
+	font-family: KarlaExtraLight;
+	src: url(KarlaExtraLight.ttf);
+}
+
+@font-face{
+	font-family: KarlaExtraLightItalic;
+	src: url(KarlaExtraLightItalic.ttf);
+}
+
+@font-face{
+	font-family: KarlaMedium;
+	src: url(KarlaMedium.ttf);
+}
+
+@font-face{
+	font-family: KarlaMediumItalic;
+	src: url(KarlaMediumItalic.ttf);
+}
+
+@font-face{
+	font-family: KarlaRegular;
+	src: url(KarlaRegular.ttf);
+}
+
+@font-face{
+	font-family: KarlaSemiBold;
+	src: url(KarlaSemiBold.ttf);
+}
