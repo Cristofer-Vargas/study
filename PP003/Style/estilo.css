@@ -1,0 +1,103 @@
+*{
+	margin: 0;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	background: linear-gradient(250.2deg, 
+	rgba(0, 0, 0, 0.87) 0%, 
+	rgba(0, 0, 0, 0.367102) 81.14%, 
+	rgba(0, 0, 0, 0) 100%), 
+	rgba(0, 0, 0, 0.66);
+
+	color: white;
+}
+
+h1, a, h3{
+	font-family: KarlaExtraBold;
+}
+
+#InfoPerfilName{
+	font-size: 46px;
+	padding-bottom: 10px;
+	border-style: hidden hidden solid hidden;
+}
+
+p{
+	font-family: KarlaRegular;
+}
+
+#InfoDesc{
+	margin: 15px 0px 15px 450px;
+	font-family: KarlaExtraLight;
+	width: 350px;
+	text-align: right;
+}
+
+.PLi{
+	margin-top: 10px;
+	font-family: KarlaMediumItalic;
+	font-size: 24px;
+}
+
+#DivUL{
+	margin-top: 40px;
+	text-align: right;
+}
+
+#imgDev{
+	width: 450px;
+}
+
+section{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	margin: 95px 20px 15px 20px;
+}
+
+#InfoPerfil{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+form{
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+	margin: 20px 250px 15px 250px;
+}
+
+#InstagramDiv{
+	font-size: 24px;
+	padding-right: 40px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#SiteDiv{
+	font-size: 24px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.InstagramElement, .SiteElement{
+	padding: 0px 5px 0px 5px;
+}
+
+a{
+	color: white;
+}
+
+a:hover{
+    color: gray;
+    transition: 0.3s all;
+}
