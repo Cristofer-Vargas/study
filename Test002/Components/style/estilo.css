@@ -1,0 +1,31 @@
+*{
+	margin: 0;
+	font-family: KarlaBold;
+}
+
+input{
+	margin: 5px 0px;
+}
+
+body{
+	background-color: #789048;
+	display: flex;
+	justify-content: center;
+	height: 600px;
+	align-items: center;
+}
+
+#DivSection{
+	padding: 50px;
+}
+
+section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	text-align: center;
+
+	background-color: white;
+	border-radius: 20px;
+}
