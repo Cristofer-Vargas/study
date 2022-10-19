@@ -1,14 +1,16 @@
 *{
 	margin: 0;
-	font-family: KarlaBold;
 }
 
 input{
 	margin: 5px 0px;
+	border-style: hidden hidden solid hidden;
+	border-radius: 10px;
+	border-width: 1px;
 }
 
 body{
-	background-color: #789048;
+	background-color: #645666;
 	display: flex;
 	justify-content: center;
 	height: 600px;
@@ -16,7 +18,23 @@ body{
 }
 
 #DivSection{
-	padding: 50px;
+	text-align: right;
+	padding: 30px 25px;
+}
+
+#DivInputs{
+	margin-bottom: 10px;
+}
+
+label{
+	font-size: 18px;
+	padding-right: 10px;
+}
+
+h1{
+	font-size: 34px;
+	margin-bottom: 40px;
+	text-align: center;
 }
 
 section{
@@ -28,4 +46,8 @@ section{
 
 	background-color: white;
 	border-radius: 20px;
+}
+
+#DivSection{
+	font-family: KarlaRegular;
 }
