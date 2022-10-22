@@ -1,10 +1,126 @@
+header{
+    height: 5vh;
+    background-color: white;
+}
+
+.HeaderContent{
+    display: flex;
+    justify-items: space-between;
+}
+
+div.HeaderContent div, nav{     /*Seleciona elementos div e nav dentro da div com classe HeadContent*/
+    display: flex;
+    padding: 0 20px;
+}
+
 body{
     margin: 0;
     padding: 0;
-
     font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;      /*Servem para fazer a quebra de linha dos paragrafos ou o que sairia do container*/
 }
 
-/* .DivMain{
-    background-image: url('https://unsplash.com/photos/E_eWwM29wfU');
-} */
+h1, h2, h3 ,h4, h5, h6{
+    font-weight: 800;   /*Peso da fonte, ou expessura da fonte*/
+}
+
+.DivMain{
+    width: 100%;
+    margin: 0 auto;     /*Não vai espaçar em cime e em baixo, mas vai espaçar na esquerda e na direta igualmente*/
+}
+
+main{
+    display: block;     /*A declaração display: block faz com que o elemento HTML seja renderizado como bloco, tal como os parágrafos e os cabeçalhos o são. Um bloco contém um espaço em branco tanto em cima como embaixo e não permite outros elementos HTML ao lado, exceto quando tiver sido declarado ao contrário (por exemplo, declarar a propriedade float para o elemento próximo ao bloco).*/
+}
+
+.container{
+    width: 100%;
+    max-width: 760px;   /*Para ficar bom em tamanhos menores*/
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+section.module p{
+    text-indent: 50px;
+    margin-bottom: 40px;
+}
+
+section.module:last-child{  /*Acessar o ultimo filho da classe module em section*/
+    margin-bottom: 0;       /*Utilizado para o ultimo item nao uzar a margin botton*/
+}
+
+sction.module h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+section.module.content{     /*Acessando todas as classes module e content dentro de Section*/
+    padding: 40px 0;
+    background-color: rgb(255, 225, 221);
+}
+
+section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;   /*Força o uso de 100vh... VH é viwer height, ou seja, 100% de toda visao da tela*/
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;   /*Centralizar a imagem de fundo*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section.module.parallax-1{
+    background-image: url('https://images.unsplash.com/photo-1545569341-9eb8b30979d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+
+}
+
+section.module.parallax-2{
+    background-image: url('https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80');
+
+}
+
+/* section.module.parallax:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0, 0, 0, 0) 50%, rgb(0, 0, 0) );
+}
+   
+    backgorund linear com after adicionar esse gradiante para baixo, do transparente para a cor solida */
+
+
+
+    section.module.parallax h1{
+        color: white;
+        text-align: center;
+        font-size: 78px;
+        z-index: 50;            /*Para ficar por cima*/
+        margin: auto auto 0px;
+    }
+    
+    section.module.parallax-1 h1{
+        font-size: 124px;
+    }
+    
+    section.module.parallax h3{
+        color: white;
+        font-size: 22px;
+        text-align: center;
+        margin: 0px auto auto;
+    }
+
+
+footer{
+    width: 100%;
+    height: 50vh;
+    
+
+    /* background-color: rgb(255, 225, 221); */
+}
