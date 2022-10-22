@@ -14,6 +14,7 @@ div.HeaderContent div, nav{     /*Seleciona elementos div e nav dentro da div co
 }
 
 body{
+    background-color: rgb(255, 225, 221);
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -31,33 +32,38 @@ h1, h2, h3 ,h4, h5, h6{
 }
 
 main{
-    display: block;     /*A declaração display: block faz com que o elemento HTML seja renderizado como bloco, tal como os parágrafos e os cabeçalhos o são. Um bloco contém um espaço em branco tanto em cima como embaixo e não permite outros elementos HTML ao lado, exceto quando tiver sido declarado ao contrário (por exemplo, declarar a propriedade float para o elemento próximo ao bloco).*/
+    display: flex;     /*A declaração display: block faz com que o elemento HTML seja renderizado como bloco, tal como os parágrafos e os cabeçalhos o são. Um bloco contém um espaço em branco tanto em cima como embaixo e não permite outros elementos HTML ao lado, exceto quando tiver sido declarado ao contrário (por exemplo, declarar a propriedade float para o elemento próximo ao bloco).*/
+    flex-direction: column;
+    align-items: center;
 }
 
 .container{
     width: 100%;
     max-width: 760px;   /*Para ficar bom em tamanhos menores*/
     margin: 0 auto;
-    padding: 0px 20px;
+    padding: 0px 100px;
 }
 
 section.module p{
     text-indent: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    font-size: 18px;
 }
 
 section.module:last-child{  /*Acessar o ultimo filho da classe module em section*/
     margin-bottom: 0;       /*Utilizado para o ultimo item nao uzar a margin botton*/
 }
 
-sction.module h2{
-    margin-bottom: 40px;
-    font-size: 30px;
+section.module h2{
+    margin-bottom: 70px;
+    font-size: 56px;
 }
 
 section.module.content{     /*Acessando todas as classes module e content dentro de Section*/
     padding: 40px 0;
-    background-color: rgb(255, 225, 221);
+    display: flex;
+    align-items: center;
+    margin: 100px auto;
 }
 
 section.module.parallax{
@@ -119,8 +125,17 @@ section.module.parallax-2{
 
 footer{
     width: 100%;
-    height: 50vh;
+    height: 5vh;
+    text-align: center;
+    padding-top: 10px;
+    background-color: white;
     
 
     /* background-color: rgb(255, 225, 221); */
+}
+
+/* A PArtir daqui são imcrementações adicionais ao projeto, referente as sections*/
+
+section.Sec-1, .Sec-3{
+    text-align: right;
 }
