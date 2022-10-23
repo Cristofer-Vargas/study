@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: auto;
+    height: auto;
+    margin: 5px auto;
+    color: white;
+    background-color: #486147;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin: 20px;
+}
+
+.divs{
+    height: 200px;
+    background-color: #A7E0A4;
+}

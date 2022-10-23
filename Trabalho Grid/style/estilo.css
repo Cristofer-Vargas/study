@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body{
+    font-family: karlaRegular;
+}
+
+section.ImgBack{
+    background-image: url('https://t3.ftcdn.net/jpg/02/44/06/08/240_F_244060866_oFckLxBPPWFpAyZ6Fm3KIsJiM6yMB2xq.jpg');
+    height: 60vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+}
+
+section.ImgBack h1{
+    font-family: GridCaps;
+    font-size: 86px;
+}
+
+section.ImgBack p{
+    position: sticky;
+    font-family: GridCaps;
+    font-size: 32px;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
+.GridContent{
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 70vw;
+}
+
+.SectionContent{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    margin: 300px auto;
+}
+
+section.SectionContent-1{
+    grid-template-areas: 
+    'DivTiTulo1 .'
+    'content1 ImgContent1';
+    align-items: center;
+    margin-top: 500px;
+}
+
+.DivTiTulo1{
+    grid-area: DivTiTulo1;
+}
+
+div h2{
+   font-size: 38px;
+   text-align: center;
+}
+
+div p{
+    font-size: 18px;
+    margin: 40px auto;
+}
+
+.content1{
+    grid-area: content1;
+    text-align: right;
+}
+
+.ImgContent1{
+    padding-left: 25px;
+    grid-area: ImgContent1;
+}
+
+.contentenf{
+    grid-template-columns: 1fr;
+    font-family: KarlaExtraLight;
+    font-size: 36px;
+}
+
+section.SectionContent-2,
+.SectionContent-3, 
+.SectionContent-4 
+{
+    background-color: rgb(243, 255, 255);
+    border-radius: 30px;
+    padding: 10px;
+    margin: 40px auto;
+    text-align: center;
+    grid-template-columns: 1fr;
+    width: 60vw;
+}
+
+.SectionContent-5{
+    grid-template-columns: 1fr 1fr;
+}
+
+section.SectionContent-5{
+    grid-template-areas: 
+    'DivTiTulo5 DivTiTulo5'
+    'ImgContent5 content5';
+    align-items: center;
+    margin-top: 500px;
+}
+
+.DivTiTulo5{
+    grid-area: DivTiTulo5;
+}
+
+.ImgContent5 img{
+    grid-area: ImgContent5;
+
+    max-width:1000px;
+    max-height:1000px;
+    width: auto;
+    height: auto;
+    
+}
+
+.content5{
+    grid-area: content5;
+}
