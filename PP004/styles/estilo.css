@@ -139,3 +139,7 @@ footer{
 section.Sec-1, .Sec-3{
     text-align: right;
 }
+
+.module.content{
+    visibility: hidden;
+}
