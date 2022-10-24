@@ -1,0 +1,330 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"padd",
+				"padding-right"
+			],
+			[
+				"borde",
+				"border-style"
+			],
+			[
+				"jus",
+				"justify-items"
+			],
+			[
+				"Sec",
+				"SectionContent-1"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"bord",
+				"border-style"
+			],
+			[
+				"padding",
+				"padding-right"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"fle",
+				"flex-direction"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"mari",
+				"margin-bottom"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"flex",
+				"flex-direction"
+			],
+			[
+				"mysql",
+				"mysqli"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"brode",
+				"border-style"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"f",
+				"flex"
+			],
+			[
+				"sty",
+				"style"
+			],
+			[
+				"karla",
+				"KarlaRegular"
+			],
+			[
+				"ali",
+				"text-align"
+			],
+			[
+				"Kar",
+				"KarlaMedium"
+			],
+			[
+				"Karla",
+				"KarlaRegular"
+			],
+			[
+				"il",
+				"li"
+			],
+			[
+				"fil",
+				"filter"
+			],
+			[
+				"border",
+				"border-style"
+			],
+			[
+				"A",
+				"fantasy"
+			],
+			[
+				"fo",
+				"footer"
+			],
+			[
+				"whi",
+				"width"
+			],
+			[
+				"align",
+				"text-align"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 106.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/wamp64/www/study/Trabalho Grid/style/estilo.css",
+		"/C/wamp64/www/study/Test002/Components/database/conexao.php",
+		"/C/wamp64/www/study/Test002/Components/style/fonts.css",
+		"/C/wamp64/www/study/Test002/Components/style/estilo.css",
+		"/C/wamp64/www/study/Test002/index.php",
+		"/C/wamp64/www/study/Test002/style/fonts.css",
+		"/C/wamp64/www/study/Test002/style/estilo.css",
+		"/C/wamp64/www/study/Test001/styles/fonts.css",
+		"/C/wamp64/www/study/Test002/Components/database/site_exemplo.php",
+		"/C/wamp64/www/study/conexao.php",
+		"/C/wamp64/www/study/index.php",
+		"/C/wamp64/www/study/PP003/Style/estilo.css",
+		"/C/wamp64/www/study/PP003/Style/fonts.css",
+		"/C/wamp64/www/study/PP003/index.html",
+		"/C/wamp64/www/study/Test002/index.html",
+		"/C/wamp64/www/study/Test001/styles/estilo.css",
+		"/C/wamp64/www/study/Test001/index.html",
+		"/C/wamp64/www/study/Test001/Components/Fonts/Karla-Bold.ttf",
+		"/C/wamp64/www/T001/estilo.css",
+		"/C/wamp64/www/T001/index.php",
+		"/C/wamp64/www/PP001/estilo.css",
+		"/C/wamp64/www/PP001/index.php",
+		"/C/wamp64/www/T001/estilo.html",
+		"/C/wamp64/www/Teste/estilo.css",
+		"/C/wamp64/www/Teste/index.php",
+		"/C/Users/Public/Pictures/Sample Pictures/Tulips.jpg",
+		"/X/3 - Jornais/A Notícia/Edições/Outubro/14/Indd/Separadas indivuais com conteúdo/Policia.indd",
+		"/C/Program Files (x86)/Adobe/Adobe InDesign CC 2019/Scripts/Scripts Panel/Samples/JavaScript/SortParagraphs.jsx",
+		"/X/3 - Jornais/A Notícia/Edições/Outubro/7/Fotos/Tira_para_OUTUBRO_dia_8.jpg",
+		"/X/3 - Jornais/A Notícia/Edições/Outubro/7/Indd/Separadas indivuais com conteúdo/Segundo Caderno Horóscopo.indd",
+		"/X/3 - Jornais/A Notícia/Edições/Outubro/7/Indd/Separadas indivuais com conteúdo/Esporte.indd",
+		"/X/3 - Jornais/A Notícia/Edições/Outubro/7/Indd/Separadas indivuais com conteúdo/Policia.indd",
+		"/X/3 - Jornais/A Notícia/Edições/Outubro/7/Indd/Separadas indivuais com conteúdo/Segundo Caderno Aperte o Play.indd",
+		"/X/3 - Jornais/A Notícia/Edições/Outubro/7/Indd/Separadas indivuais com conteúdo/Geral Color 13 - 17.indd",
+		"/X/3 - Jornais/A Notícia/Edições/Outubro/7/Indd/Separadas indivuais com conteúdo/Religião.indd",
+		"/X/3 - Jornais/A Notícia/Edições/Outubro/7/Indd/Separadas indivuais com conteúdo/Segundo Caderno Contra capa.indd"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 77.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 265.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

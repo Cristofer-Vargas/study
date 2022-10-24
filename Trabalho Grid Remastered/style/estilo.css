@@ -5,6 +5,7 @@
 }
 
 body{
+
     font-family: karlaRegular;
 }
 
@@ -50,4 +51,221 @@ main{
 {
     max-width: 500px;
     max-height: 500px;
+}
+
+.SectionContent{
+
+    display: grid;
+    margin: 150px 0px;
+}
+
+.SectionContent-1 {
+
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.SectionContent-1{
+    grid-template-areas: 
+    'Titulo Img'
+    'Conteudo Img';
+    grid-template-rows: 50px auto;
+}
+
+div.Title-1{
+    grid-area: Titulo;
+    display: grid;
+    justify-items: right;
+}
+
+div.content-1{
+    grid-area: Conteudo;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: center;
+}
+
+div.content-1 p{
+
+    padding: 20px 0px;
+}
+
+div.Title-1 h2{
+    font-size: 36px;
+    font-family: KarlaExtraBold;
+}
+
+div.ImgContent-1{
+    grid-area: Img;
+    display: grid;
+    justify-items: center; 
+}
+
+.SectionContent-2,                  /*As sessões com a imagem horizontal deverão ter 1 colunas*/
+.SectionContent-3{
+
+    grid-template-columns: 1fr;
+}
+
+div.content-2{
+
+    text-align: center;
+}
+
+section.TopicosContent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-style: hidden solid;
+}
+
+section.Topico{
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+div.Title-2,
+div.Title-3,
+div.Title-4
+h3{
+    padding-bottom: 22px;
+    font-size: 24px;
+    font-family: KarlaBold;
+}
+
+div.contentTopic p{
+
+    padding: 5px;
+}
+
+section.TopCont-2{
+    border-width: 1px;
+    box-shadow: gray;
+    border-style: hidden solid;
+}
+
+section.contentTopic p{
+
+    align-items: ;
+}
+
+section.SectionContent-2, 
+section.SectionContent-3, 
+section.SectionContent-4{
+    justify-items: center;
+    grid-template-areas: 
+    'Tit' 
+    'Imagem' 
+    'Paragrafo';
+}
+
+div.Title-5,
+div.Title-6,
+div.Title-7 {
+    font-size: 32px;
+    padding: 20px 0px;
+    grid-area: Tit;
+}
+
+div.content-6,
+div.content-7,
+div.content-8 p{
+
+    grid-area: Paragrafo;
+}
+
+.content-6 p, 
+.content-7 p, 
+.content-8 p{
+
+    margin: 20px 0px;
+}
+
+div.ImgContent-2 img,
+div.ImgContent-3 img{
+
+    grid-area: Imagem;
+    max-width: 700px;
+}
+
+.SectionContent-5 {
+
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.SectionContent-5{
+    grid-template-areas: 
+    'LImg LTitulo'
+    'LImg LConteudo';
+    grid-template-rows: 50px auto;
+}
+
+div.Title-8{
+    grid-area: LTitulo;
+    display: grid;
+    justify-items: left;
+}
+
+div.content-9{
+    grid-area: LConteudo;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+}
+
+div.content-9 p{
+
+    padding: 20px 0px;
+}
+
+div.Title-8 h2{
+    font-size: 36px;
+    font-family: KarlaExtraBold;
+}
+
+div.ImgContent-4{
+    grid-area: LImg;
+    display: grid;
+    justify-items: center; 
+}
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
+    justify-content: center;
+    background-color: #6B6B6B;
+    color: white;
+}
+
+.FooterDiv-1{
+    border-style: hidden solid hidden hidden;
+    border-width: 1px;
+    padding-right: 10px;
+}
+
+.FooterDiv-1 p{
+    padding: 5px 0px;
+}
+
+.FooterDiv-2{
+    border-style: hidden hidden hidden solid;
+    border-width: 1px;
+    padding-left: 10px;
+}
+
+.FooterDiv-2 p{
+    padding: 5px 0px;
+}
+
+a{
+    color: white;
+    text-decoration: none
+}
+
+a:hover{
+    text-decoration: underline;
 }
