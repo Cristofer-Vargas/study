@@ -3,32 +3,31 @@
 	padding: 0;
 }
 
-main {
-	display: flex;
-	justify-content: center;
+.BackGround-LinearGradiant {
+	width: 100vw;
+	height: 200vh;
+	background: linear-gradient(180deg, #000000 50%, rgb(255, 255, 255) 50%);
 }
 
-.content div {
-	margin: 50px 0;
+.GridGlobal {
+	margin: 0 auto;
+	width: 80vw;
+	height: 100%;
+	background-color: rgba(180, 180, 180, 0.15);
 }
 
-.par {
-	padding: 50px;
-	color: #FF0000;
+.PaddingContent {
+	padding: 10%;
 }
 
-
-
-
-
-.div-1 {
-	border-style: hidden solid;
-	border-width: 1px;
-	border-radius: 10px;
-	text-align: center;
-	border-color: #FF0000;
+.GridLocal-Column {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
 }
 
-.par-1 {
-	padding: 0 10px;
+.RowGridContent {
+	background-color: #ff0000;
+	width: 100%;
+	height: 100%;
 }
