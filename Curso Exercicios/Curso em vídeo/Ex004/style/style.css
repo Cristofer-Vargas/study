@@ -1,0 +1,18 @@
+* {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.GrayPag {
+  background-color: rgb(201, 201, 201);
+  color: rgb(0, 0, 0);
+}
+
+.GreenPag {
+  background-color: rgb(146, 233, 146);
+  color: rgb(14, 73, 14);
+}
+
+.YellowPag {
+  background-color: rgb(247, 247, 144);
+  color: rgb(121, 121, 56);
+}

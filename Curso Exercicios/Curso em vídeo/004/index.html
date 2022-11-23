@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capítulo 11</title>
+</head>
+<body>
+  <h1>Imagem Dinãmica</h1>
+  <p>Teste diminuir e/ou aumentar o navegaor para mudar o tamanho da imagem</p>
+
+  <picture>
+    <source media="(max-width: 750px)" srcset="./images/foto-p.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="./images/foto-m.png" type="image/png">
+    <img src="./images/foto-g.png" alt=" Imagem flexivel">
+  </picture>
+
+  <picture>
+    <source media="(max-width: 750px)" srcset="./images/suic-p.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="./images/suic-m.png" type="image/png">
+
+    <img src="images/suic-g.png" alt="Imagem da Suiça Flexivel">
+  </picture>
+
+  <h2>Colocando Áudio</h2>
+  <p>Colocando uma musiquinha para tocar :)</p>
+
+  <audio preload="metadata" controls>
+    <source src="./aud/Indecision-Dyalla.mp3" type="audio/mpeg">
+    <p>Não carregou corretamente</p>
+  </audio>
+</body>
+</html>
