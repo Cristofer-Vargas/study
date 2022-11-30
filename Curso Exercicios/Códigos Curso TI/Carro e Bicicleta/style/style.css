@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.DivTitle {
+	margin-top: 50px;
+	margin-bottom: 25px;
+}
+
+.DivTitle H1{
+	font-size: 28px;
+}
+
+.ColorWhite {
+	color: white;
+	padding: 5px 0;
+}
+
+.ColorGray {
+	color: #b2b2b2;
+	padding: 5px 0;
+}
+
+.SpanYellow {
+	color: #febe01;
+}
+
+.DivTitle {
+	text-align: center;
+}
+
+.BackGroundBlack {
+	background-color: #111;
+	border-radius: 4px;
+	width: 80vw;
+	margin: 20px auto;
+}
+
+.ContentPadding {
+	padding: 20px;
+}
+
+.ButtonBuy {
+	margin-top: 10px;
+	background-color: #febe01;
+	width: 150px;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.ButtonBuy:hover {
+	margin-top: 10px;
+	background-color: #ac8100;
+	width: 150px;
+	text-align: center;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.SpanButn {
+	padding: 10px;
+}

@@ -1,0 +1,79 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+.BackgroundImage {
+	width: 100vw;
+	height: 100vh;
+	background-image: url('astronauts.jpg');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+
+.BackgroundColor {
+	width: 50vw;
+	height: 50vh;
+	margin: 0 auto;
+
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 20px;
+	backdrop-filter: blur(3px);
+}
+
+.MarginContent {
+	margin: 25px;
+}
+
+.TextAlign-Center {
+	text-align: center;
+}
+
+.TextAlign-Center h1 {
+	text-transform: uppercase;
+	color: white;
+	font-weight: 800;
+	font-size: 28px;
+	margin-bottom: 50px;
+}
+
+.FlexArchivesBlocks {
+	display: flex;
+}
+
+.ArchivesDiv {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 15px;
+	row-gap: 30px;
+}
+
+.ItensArquives {
+	width: 100%;
+	height: 5vh;
+	background-color: rgb(209, 209, 209);
+	backdrop-filter: blur(4px);
+	border-radius: 20px;
+	box-shadow: 0px 2px 2px;
+	text-align: center;
+	padding: 2px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.LinkItem {
+	text-decoration: none;
+}
+
+.LinkItem:hover div {
+	background-color: rgb(185, 185, 185);
+}
+
+a {
+	text-decoration: none;
+}

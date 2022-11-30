@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.FilmToday {
+    color: darkred;
+}
+
+.FilmTomorrow {
+    color: darkblue;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 a{
+    color: seagreen;
+}
+
+.NavHead h2{
+    padding: 25px;    
+    animation-name: NavAni;
+    animation-duration: 1s;
+}
+
+@keyframes NavAni{
+    0%{
+        padding: 25px;
+    }
+
+    100%{
+    color: rgb(0, 255, 106);
+    transition: 1000ms;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 0 200px;
+    border-radius: 5px;
+    }
+
+    
+}    
+
+.ParCine {
+    font-size: 20px;
+}
+
+.NavHead {
+    background-color: rgba(0, 0, 0, 0.10);
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.CinemaCartaz {
+    background-color: rgba(0, 0, 0, 0.10);
+    text-align: center;
+}
+
+.ParCine {
+    padding: 20px 0px;
+}
+
+.CinemaCartazTitle {
+    padding: 50px 0px;
+    font-size: 34px;
+}
+
+.CinemaCartazTitle h1{
+    padding-bottom: 20px;
+    margin: 0 auto;
+    width: 45vw;
+    border-style: hidden hidden solid hidden;
+}
+
+.CinemaCartaz{
+    background-image: url('https://img.freepik.com/fotos-gratis/fileiras-vazias-em-um-cinema_53876-147863.jpg?w=996&t=st=1667949244~exp=1667949844~hmac=62e5ecd4d46a2b7aaeb22e875cdef4fe75c3e2a9831cdb2dbcd32d0ec1ab8520');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.CartazBackGroundColor{
+    background-color: rgba(255, 255, 255, 0.719);
+    border-radius: 30px;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+.ContentIndex {
+    padding: 40px 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 900px;
+}
