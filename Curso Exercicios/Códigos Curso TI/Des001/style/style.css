@@ -15,6 +15,11 @@ a {
   color: #000000;
 }
 
+a:hover {
+  color: #b900b9;
+  transition: 0.5s;
+}
+
 .logomenu {
   display: flex;
   justify-content: center;
@@ -43,21 +48,26 @@ a {
 }
 
 .section-background {
-  margin-top: 100px;
-  background-color: #eee;
+  /* background-color: #eee; */
+  background-image: url(https://img.freepik.com/vetores-gratis/fundo-de-listras-grunge-diagonal-roxo_1409-1425.jpg?w=1060&t=st=1669850299~exp=1669850899~hmac=93fba9d47df38ab182d72762e5e9ccbd4a582d0b17a66f91e73bba355168eebb);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  height: 100vh;
 }
 
 .grid-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 50px;
 }
 
-#img {
-  grid-area: img;
-}
-
-#content {
-  grid-area: content-section;
+.center-description {
+  margin: auto 0;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(2px);
 }
 
 .section-imgspace img {
@@ -75,5 +85,96 @@ a {
 .flex-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+}
+
+.head-produto {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.price-produto {
+  font-size: 28px;
+  font-weight: 800;
+  color: #b900b9
+}
+
+.flexend-produto {
+  display: flex;
+  justify-content: end;
+}
+
+.margin-produto {
+  margin: 30px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: space-around;
+}
+
+.addcar-btn {
+  font-weight: 600;
+  width: 70%;
+  text-align: center;
+  border: 0.7px solid #b900b9;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.buy-btn {
+  background-color: #b900b9;
+  color: white;
+  font-weight: 800;
+  width: 70%;
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.addcar-btn:hover {
+  background-color: #d6d6d6;
+  border: none;
+  cursor: pointer;
+  border: 0.7px solid #d6d6d6;
+}
+
+.buy-btn:hover {
+  background-color: #940094;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #420042;
+  color: white;
+  padding: 150px 40px;
+  text-align: center;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px;
+}
+
+.head-infofooter {
+  margin-bottom: 20px;
+}
+
+.contribuitionforlayout {
+  margin-top: 100px;
+}
+
+.contribuitionforlayout a{
+  color: white;
+}
+
+.contribuitionforlayout a:hover{
+  text-align: center;
+  color: #b900b9;
 }
