@@ -1,0 +1,36 @@
+@charset "UTF-8"; /*Serve para que seja aceito caracteres especiais no documento css*/
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to right, #f1d8c9, #f2c3a7);
+}
+
+main {
+  background-color: #fff;
+  border-radius: 10px;
+
+  /* 1º Parametro, eixo X. 2º Parametro, eixo y. 3º Parametro,
+  difusão da sombra/quanto a sombra irá espalhar. 4º Parametro, COR */
+  box-shadow: 5px 5px 15px rgba(136, 109, 93, 0.616);
+
+  width: 600px;
+  padding: 10px;
+  margin: auto;
+}
+
+h1 {
+  color: #f39209;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(129, 77, 5, 0.726);
+}
+
+h2 {
+  color: #125189;
+}
+
+p {
+  text-align: justify;
+}
