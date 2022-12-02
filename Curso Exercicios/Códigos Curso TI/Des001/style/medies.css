@@ -1,0 +1,9 @@
+@media (max-width: 966px) {
+  .grid-section {
+    grid-template-columns: 1fr;
+  }
+
+  .section-background {
+    height: 200vh;
+  }
+}
