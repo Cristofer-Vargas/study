@@ -24,9 +24,15 @@
 .content-section {
   height: 100vh;
   padding: 100px;
+  display: grid;
+  grid-template-columns: 1fr 450px;
 }
 
 .content-section h1{
   color: #516073;
   font-weight: 600;
+}
+
+.content-section div{
+  margin: 50px auto;
 }
