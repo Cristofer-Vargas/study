@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  color: #b900b9;
+  transition: 0.5s;
+}
+
+.logomenu {
+  display: flex;
+  justify-content: center;
+}
+
+.logomenu img{
+  width: 100px;
+}
+
+.grid-headermenu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px;
+}
+
+.undered-menulist {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.div-menulist {
+  display: flex;
+  justify-content: center;
+}
+
+.section-background {
+  /* background-color: #eee; */
+  background-image: url(https://img.freepik.com/vetores-gratis/fundo-de-listras-grunge-diagonal-roxo_1409-1425.jpg?w=1060&t=st=1669850299~exp=1669850899~hmac=93fba9d47df38ab182d72762e5e9ccbd4a582d0b17a66f91e73bba355168eebb);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  height: 100vh;
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px;
+}
+
+.center-description {
+  margin: auto 0;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(2px);
+}
+
+.section-imgspace img {
+  max-width: 100%;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.section-imgspace:hover img {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.flex-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.head-produto {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.price-produto {
+  font-size: 28px;
+  font-weight: 800;
+  color: #b900b9
+}
+
+.flexend-produto {
+  display: flex;
+  justify-content: end;
+}
+
+.margin-produto {
+  margin: 30px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: space-around;
+}
+
+.addcar-btn {
+  font-weight: 600;
+  width: 70%;
+  text-align: center;
+  border: 0.7px solid #b900b9;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.buy-btn {
+  background-color: #b900b9;
+  color: white;
+  font-weight: 800;
+  width: 70%;
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.addcar-btn:hover {
+  background-color: #d6d6d6;
+  border: none;
+  cursor: pointer;
+  border: 0.7px solid #d6d6d6;
+}
+
+.buy-btn:hover {
+  background-color: #940094;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #420042;
+  color: white;
+  padding: 150px 40px;
+  text-align: center;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px;
+}
+
+.head-infofooter {
+  margin-bottom: 20px;
+}
+
+.contribuitionforlayout {
+  margin-top: 100px;
+}
+
+.contribuitionforlayout a{
+  color: white;
+}
+
+.contribuitionforlayout a:hover{
+  text-align: center;
+  color: #b900b9;
+}

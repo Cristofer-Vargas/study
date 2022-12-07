@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'font awasome';
+  src: url(./fonts/fontawesome-webfont.ttf) format('truetype') 
+  url(./fonts/FontAwesome.otf) format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* color logo: #DBB88E; */
+
+* {
+  margin: 0;
+  padding: 0;
+}
