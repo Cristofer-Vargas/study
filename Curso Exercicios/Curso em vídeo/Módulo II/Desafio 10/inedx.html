@@ -7,47 +7,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Desafio 10 | Site Android</title>
   <link rel="stylesheet" href="./style/style.css">
+  <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 
 </head>
 
 <body class="page-layout">
-  <header>
-    <section>
+  <header class="background-image">
+    <section class="titulo-pag">
       <div class="max-width">
         <div class="header-paddin">
           <div class="header-content">
-            <h1>Curiosidades de Tecnologia</h1>
-            <p>
-              Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar
-            </p>
+            <div class="titulo">
+              <h1>Curiosidades de Tecnologia</h1>
+              <p>
+                Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <nav>
+    <nav class="nav-pag">
       <div class="max-width">
         <div class="nav-paddin">
           <div class="nav-content">
-            <ul>
+            <ul class="flex-navegation">
               <li>
                 <a href="#">
-                  Home
+                  <div>
+                    Home
+                  </div>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  Notícias
+                  <div>
+                    Notícias
+                  </div>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  Curiosidades
+                  <div>
+                    Curiosidades
+                  </div>
                 </a>
               </li>
               <li>
                 <a href="#">
-                  Fale Conosco
+                  <div>
+                    Fale Conosco
+                  </div>
                 </a>
               </li>
             </ul>
@@ -60,7 +71,7 @@
   <main>
     <div class="background-paper">
       <div class="content-paddin">
-        <div class="main-content">
+        <article class="main-content">
           <h1>História do Mascote do Android</h1>
           <p>
             Provavelmente você sabe que o sistema operacional Android, mantido pelo Google é um dos mais utilizados para
@@ -78,6 +89,13 @@
 
           <!-- Foto - usar picturte -->
 
+          <div class="center-picture">
+            <picture>
+              <source media="(max-width: 850px)" srcset="imagens/dan-droids-pq.png" type="image/png">
+              <img src="imagens/dan-droids.png" alt="Androids">
+            </picture>
+          </div>
+
           <p>
             Essa primeira versão bizarra até foi batizada em homenagem ao seu criador: seriam os Dandroids.
           </p>
@@ -91,6 +109,13 @@
 
           <!-- Foto -->
 
+          <div class="center-picture">
+            <picture>
+              <source media="(max-width: 850px)" srcset="imagens/irina-blok-pq.jpg" type="image/jpg">
+              <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+            </picture>
+          </div>
+
           <p>
             A ideia principal da Irina era representar tudo graficamente com poucos traços e de forma mais chapada. O
             desenho também deveria gerar identificação rápida com quem o olha. Surgiu então o Bugdroid, o novo mascote
@@ -98,6 +123,12 @@
           </p>
 
           <!-- Foto -->
+
+          <div class="center-picture">
+            <picture>
+              <img src="imagens/bugdroid.png" alt="Bug Droid">
+            </picture>
+          </div>
 
           <p>
             A principal inspiração para os traços do novo Bugdroid veio daqueles bonequinhos que ilustram portas de
@@ -108,58 +139,74 @@
 
           <!-- Vídeo do youtubes, iframe do youtube -->
 
+          <div class="center-picture iframe-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+
           <aside>
-            <h2>Quer aprender mais? </h2>
-            <p>
-              Outro assunto curioso em relação ao Android é que cada versão sempre foi nomeada em homenagem a um doce,
-              em ordem alfabética a partir da versão 1.5 até a 9.0.
-            </p>
-
-            <ul>
-              <li>1.5 - Cupcake</li>
-              <li>1.6 - Donut</li>
-              <li>3.0 - Eclair</li>
-              <li>2.2 - Froyo</li>
-              <li>2.3 - Gingerbread</li>
-              <li>3.0 - Honeycomb</li>
-              <li>4.0 - Ice Cream Sandwich</li>
-              <li>4.1 - Jelly Bean</li>
-              <li>4.4 - KitKat</li>
-              <li>5.0 - Lolipop</li>
-              <li>6.0 - Marshmallow</li>
-              <li>7.0 - Nougat</li>
-              <li>8.0 - Oreo</li>
-              <li>9.0 - Pie</li>
-            </ul>
-
-            <p>
-              Infelizmente, o Android Q não existiu, pois o Google resolveu pôr fim a essa divertida prática e começou a
-              usar numerações, o que deu origem ao Android 10.
-            </p>
-
-            <p>
-              Acesse <a href="#">aqui</a> o site Android History para conhecer a sequência das versões "adocicadas" e o
-              que cada uma
-              trouxe para o sistema Android.
-            </p>
+            <div class="aside-title">
+              <h2>Quer aprender mais? </h2>
+            </div>
+            <div class="aside-content">
+              <p>
+                Outro assunto curioso em relação ao Android é que cada versão sempre foi nomeada em homenagem a um doce,
+                em ordem alfabética a partir da versão 1.5 até a 9.0.
+              </p>
+              <div class="aside-undered-list">
+                <ul>
+                  <li>1.5 - Cupcake</li>
+                  <li>1.6 - Donut</li>
+                  <li>3.0 - Eclair</li>
+                  <li>2.2 - Froyo</li>
+                  <li>2.3 - Gingerbread</li>
+                  <li>3.0 - Honeycomb</li>
+                  <li>4.0 - Ice Cream Sandwich</li>
+                </ul>
+                <ul>
+                  <li>4.1 - Jelly Bean</li>
+                  <li>4.4 - KitKat</li>
+                  <li>5.0 - Lolipop</li>
+                  <li>6.0 - Marshmallow</li>
+                  <li>7.0 - Nougat</li>
+                  <li>8.0 - Oreo</li>
+                  <li>9.0 - Pie</li>
+                </ul>
+              </div>
+              <p>
+                Infelizmente, o Android Q não existiu, pois o Google resolveu pôr fim a essa divertida prática e começou
+                a
+                usar numerações, o que deu origem ao Android 10.
+              </p>
+              <p>
+                Acesse <a href="#">aqui</a> o site Android History para conhecer a sequência das versões "adocicadas" e
+                o
+                que cada uma
+                trouxe para o sistema Android.
+              </p>
+            </div>
           </aside>
 
           <p>
             Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o sistema Android e
             seu simpático mascote.
           </p>
-
-          <p>
-            Site criado por Cristofer Vargas para o desafio proposto por Gustavo Guanabara no curso do <a href="#">CursoemVideo</a>.
-          </p>
-        </div>
+        </article>
       </div>
     </div>
   </main>
 
   <footer>
     <div class="max-width">
-
+      <div class="footer-paddin">
+        <p>
+          Site criado por <strong>Cristofer Vargas</strong> para o desafio proposto por <strong>Gustavo Guanabara</strong> no curso do <a
+            href="https://www.cursoemvideo.com/">CursoemVideo</a>.
+        </p>
+      </div>
     </div>
   </footer>
 

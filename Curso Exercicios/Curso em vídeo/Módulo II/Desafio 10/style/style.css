@@ -1,9 +1,3 @@
-@media (min-width: 1024px)  {
-  .background-paper {
-    width: 100%;
-  }
-}
-
 @font-face {
   font-family: 'Android';
   src: url(../fontes/idroid.otf) format('opentype');
@@ -21,6 +15,8 @@
   --fonte0: Arial, Hevetica, sans-serif;
   --fonte1: 'Bebas Neue', cursive;
   --fonte2: 'Android', sans-serif;
+
+  --max-width: 800px;
 }
 
 * {
@@ -29,7 +25,8 @@
 }
 
 .max-width {
-  width: 1024;
+  max-width: var(--max-width);
+  margin: 0 auto;
   height: 100%;
 }
 
@@ -49,7 +46,102 @@ header {
   height: 300px;
   width: 100%;
   grid-area: header;
-  background-color: red;
+  /* background: linear-gradient(to top, var(--cor5) 50%, var(--cor2) 50%); */
+  background-color: var(--cor4);
+  display: grid;
+  grid-template-areas: 
+  'titulo'
+  'navegacao'
+  ;
+  grid-template-rows: 90% 10%;
+}
+
+.titulo-pag {
+  grid-area: titulo;
+  width: 100%;
+  height: 100%;
+}
+
+.background-image {
+  background-image: url(../imagens/android-robot_clipdrop-relight.png);
+  background-position: 35%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.header-paddin {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.titulo h1{
+  font-family: var(--fonte1);
+  font-size: 4em;
+  text-align: center;
+}
+
+.titulo p{
+  font-family: var(--fonte0);
+  text-indent: 0;
+  text-align: center;
+}
+
+
+/* NAvegação */
+
+.nav-pag {
+  width: 100%;
+  height: 100%;
+  grid-area: navegacao;
+}
+
+.nav-paddin {
+  height: 100%;
+  width: 100%;
+}
+
+.nav-content {
+  height: 100%;
+  width: 100%;
+}
+
+.flex-navegation {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+.flex-navegation li{
+  list-style: none;
+  height: 100%;
+  width: 100%;
+}
+
+
+.flex-navegation div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: #063d1e81;
+}
+
+.flex-navegation div:hover{
+  background-color: #042b15;
+}
+
+.flex-navegation a{
+  text-decoration: none;
+  color: #fff;
+  font-family: var(--fonte0);
+  width: auto;
+  height: auto;
 }
 
 
@@ -59,14 +151,21 @@ main {
   width: 100%;
   height: auto;
   grid-area: main;
-  background-color: aqua;
+  background-color: var(--cor1);
   padding-bottom: 20px;
 }
 
+p {
+  text-indent: 30px;
+}
+
 .background-paper {
+  box-shadow: 0px 0px 5px 3px #0000003b;
+  border-radius: 0 0 10px 10px;
   margin: 0 auto;
   height: 100%;
-  max-width: 1024px;
+  max-width: var(--max-width);
+  min-width: 400px;
   background-color: rgb(255, 255, 255);
 }
 
@@ -80,11 +179,106 @@ main {
   /* background-color: gray; */
 }
 
+.main-content > h1{
+  font-family: var(--fonte2);
+  color: var(--cor3);
+  margin: 0 0 30px 0;
+}
+
+.main-content > h2 {
+  font-family: var(--fonte2);
+  color: var(--cor3);
+  margin: 30px 0;
+  background: linear-gradient(to right, var(--cor1), transparent);
+  padding: 10px;
+}
+
+.main-content > p{
+  font-family: var(--fonte0);
+  line-height: 1.5em;
+  margin: 5px 0;
+  width: 100%;
+}
+
+.center-picture {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 40px 0;
+  width: 100%;
+}
+
+.center-picture iframe {
+  width: 90%;
+}
+
+.iframe-video {
+  width: 100%;
+  background-color: var(--cor5);
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+/* Aside */
+
+aside {
+  background-color: var(--cor1);
+  border-radius: 20px;
+  margin: 30px 0;
+}
+
+.aside-title {
+  padding: 20px;
+  background-color: var(--cor4);
+  border-radius: 20px 20px 0 0;
+  font-family: var(--fonte2);
+  color: var(--cor0);
+}
+
+.aside-content {
+  padding: 20px;
+  font-family: var(--fonte0);
+}
+
+.aside-content p {
+  margin: 15px 0;
+}
+
+.aside-undered-list {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+
+  list-style-type: '\2714';
+  list-style-position: inside;
+}
+
 /* Conteúdo Rodapé */
 
 footer {
   width: 100%;
-  height: 100px;
+  height: 90px;
   background-color: black;
   grid-area: footer;
+  font-family: var(--fonte0);
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.footer-paddin {
+  padding: 20px 0;
+  text-indent: 0;
+}
+
+.footer-paddin p {
+  margin: 0 auto;
+  color: #fff;
+}
+
+.footer-paddin a{
+  text-decoration: none;
+  color: #3ddc84;
 }
