@@ -1,0 +1,253 @@
+.row1 {
+	flex-direction: row;
+}
+.row-reverse1 {
+	flex-direction: row-reverse;
+}
+.column1 {
+	flex-direction: column;
+}
+.column-reverse1 {
+	flex-direction: column-reverse;
+}
+
+/* Flex Container */
+.container1 {
+  font-family: monospace;
+	max-width: 400px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+}
+/* Flex Item */
+.item1 {
+	/* O flex: 1; é necessário para que cada item se expanda ocupando o tamanho máximo do container. */
+	flex: 1;
+	margin: 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+h1 {
+  font-family: monospace;
+	text-align: center;
+	margin: 20px 0 0 0;
+	font-size: 1.25em;
+	font-weight: normal;
+}
+
+body {
+	color: rgb(255, 255, 255);
+}
+
+/* ------------------------------------------------------------ */
+
+.nowrap2 {
+	flex-wrap: nowrap;
+}
+.wrap2 {
+	flex-wrap: wrap;
+}
+.wrap-reverse2 {
+	flex-wrap: wrap-reverse;
+}
+
+/* Flex Container */
+.container2 {
+	max-width: 360px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+}
+/* Flex Item */
+.item2 {
+	/* O flex: 1; é necessário para que cada item se expanda ocupando o tamanho máximo do container. */
+	flex: 1;
+	margin: 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+/* ------------------------------------------------------------ */
+
+.row-nowrap3 {
+	flex-flow: row nowrap;
+}
+.column-nowrap3 {
+	flex-flow: column nowrap;
+}
+.row-wrap3 {
+	flex-flow: row wrap;
+}
+
+/* Flex Container */
+.container3 {
+	max-width: 360px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+}
+/* Flex Item */
+.item3 {
+	/* O flex: 1; é necessário para que cada item se expanda ocupando o tamanho máximo do container. */
+	flex: 1;
+	margin: 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+
+
+.flex-start4 {
+	justify-content: flex-start;
+}
+
+.flex-end4 {
+	justify-content: flex-end;
+}
+
+.center4 {
+	justify-content: center;
+}
+
+.space-between4 {
+	justify-content: space-between;
+}
+
+.space-around4 {
+	justify-content: space-around;
+}
+
+/* Flex Container */
+.container4 {
+	max-width: 420px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+}
+
+.column4 {
+	min-height: 350px;
+	flex-direction: column;
+}
+
+/* Flex Item */
+.item4 {
+	margin: 5px;
+	padding: 0 10px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+/* Indica que o conteúdo deve se expandir */
+.flex4 {
+	flex: 1;
+}
+
+/* ------------------------------------------------------------ */
+
+.stretch5 {
+	align-items: stretch;
+}
+
+.flex-start5 {
+	align-items: flex-start;
+}
+
+.flex-end5 {
+	align-items: flex-end;
+}
+
+.center5 {
+	align-items: center;
+}
+
+.baseline5 {
+	align-items: baseline;
+}
+
+/* Flex Container */
+.container5 {
+	max-width: 420px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+}
+
+.column5 {
+	flex-direction: column;
+}
+
+/* Flex Item */
+.item5 {
+	flex: 1;
+	margin: 5px;
+	padding: 0 10px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.item5:first-child {
+	padding-top: 20px;
+}
+
+.alinhamento-central5 {
+	height: 400px;
+	justify-content: center;
+	align-items: center;
+}
+
+.alinhamento-central5 .item5 {
+	flex: 0;
+	padding: 10px;
+}
+
+/* ------------------------------------------------------------ */
+
+.stretch6 {
+	align-content: stretch;
+}
+
+.flex-start6 {
+	align-content: flex-start;
+}
+
+.flex-end6 {
+	align-content: flex-end;
+}
+
+.center6 {
+	align-content: center;
+}
+
+.space-between6 {
+	align-content: space-between;
+}
+
+.space-around6 {
+	align-content: space-around;
+}
+
+/* Flex Container */
+.container6 {
+	max-width: 420px;
+	height: 300px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+	flex-wrap: wrap;
+}
+/* Flex Item */
+.item6 {
+	flex: 1;
+	margin: 5px;
+	padding: 0 10px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
