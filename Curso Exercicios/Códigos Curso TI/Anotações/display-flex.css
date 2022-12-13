@@ -1,24 +1,28 @@
 .row1 {
 	flex-direction: row;
 }
+
 .row-reverse1 {
 	flex-direction: row-reverse;
 }
+
 .column1 {
 	flex-direction: column;
 }
+
 .column-reverse1 {
 	flex-direction: column-reverse;
 }
 
 /* Flex Container */
 .container1 {
-  font-family: monospace;
+	font-family: monospace;
 	max-width: 400px;
 	margin: 0 auto;
 	display: flex;
 	border: 1px solid #ccc;
 }
+
 /* Flex Item */
 .item1 {
 	/* O flex: 1; é necessário para que cada item se expanda ocupando o tamanho máximo do container. */
@@ -30,7 +34,7 @@
 }
 
 h1 {
-  font-family: monospace;
+	font-family: monospace;
 	text-align: center;
 	margin: 20px 0 0 0;
 	font-size: 1.25em;
@@ -46,9 +50,11 @@ body {
 .nowrap2 {
 	flex-wrap: nowrap;
 }
+
 .wrap2 {
 	flex-wrap: wrap;
 }
+
 .wrap-reverse2 {
 	flex-wrap: wrap-reverse;
 }
@@ -60,6 +66,7 @@ body {
 	display: flex;
 	border: 1px solid #ccc;
 }
+
 /* Flex Item */
 .item2 {
 	/* O flex: 1; é necessário para que cada item se expanda ocupando o tamanho máximo do container. */
@@ -75,9 +82,11 @@ body {
 .row-nowrap3 {
 	flex-flow: row nowrap;
 }
+
 .column-nowrap3 {
 	flex-flow: column nowrap;
 }
+
 .row-wrap3 {
 	flex-flow: row wrap;
 }
@@ -89,6 +98,7 @@ body {
 	display: flex;
 	border: 1px solid #ccc;
 }
+
 /* Flex Item */
 .item3 {
 	/* O flex: 1; é necessário para que cada item se expanda ocupando o tamanho máximo do container. */
@@ -242,6 +252,7 @@ body {
 	border: 1px solid #ccc;
 	flex-wrap: wrap;
 }
+
 /* Flex Item */
 .item6 {
 	flex: 1;
@@ -251,3 +262,187 @@ body {
 	text-align: center;
 	font-size: 1.5em;
 }
+
+/* ------------------------------------------------------------ */
+
+/* Os itens não se expandem para ocupar o container. */
+.grow0-7 {
+	flex-grow: 0;
+}
+
+/* Os itens se expandem igualmente para ocupar o container. 
+Utilizando apenas o flex-grow, o crescimento é distribuído
+ igualmente antes e depois do conteúdo de cada elemento. 
+ (pois por padrão o flex-basis é auto) */
+.grow1-7 {
+	flex-grow: 1;
+}
+
+/* Os itens se expandem duas vezes mais que aqueles com flex-grow: 1; */
+.grow2-7 {
+	flex-grow: 2;
+}
+
+.item7 {
+	margin: 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+/* Flex Container */
+.container7 {
+	max-width: 400px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+}
+
+/* ------------------------------------------------------------ */
+
+/* FLEX BASIS AUTO */
+
+.basis-auto8 {
+	flex-grow: 1;
+	flex-basis: auto;
+}
+
+/* O espaço distribuído é 2 vezes maior que o flex-grow: 1; */
+.basis-auto-grow-28 {
+	flex-grow: 2;
+	flex-basis: auto;
+}
+
+/* É o mesmo espaço distribuido que os demais itens com flex-grow: 1; 
+Porém esse espaço inicia após os 60px iniciais */
+.basis-auto-width8 {
+	flex-grow: 1;
+	flex-basis: auto;
+	width: 60px;
+}
+
+/* Com o flex-grow: 0; nada é distribuído */
+.basis-auto-grow-08 {
+	flex-basis: auto;
+}
+
+.container.overlay8 {
+	margin-top: 10px;
+}
+
+.overlay8 .basis-auto8::before, .overlay8 .basis-auto-grow-28::before, .overlay8 .basis-auto-width8::before {
+	content: '';
+	display: block;
+	width: 16px;
+	height: 36px;
+	background: blue;
+	position: absolute;
+	opacity: .5;
+}
+
+.overlay8 .basis-auto-grow-28::before {
+	border-right: 16px solid blueviolet;
+}
+
+.overlay8 .basis-auto-width8::before {
+	border-right: 30px solid;
+}
+
+/* FLEX BASIS AUTO FIM */
+
+/* FLEX BASIS 0 */
+
+/* Com o flex-basis 0, itens com flex-grow 1 tentam ficar 
+com o mesmo tamanho total de width. É por isso que o mais 
+comum é utilizar flex-basis 0 */
+.basis-08 {
+	flex-grow: 1;
+	flex-basis: 0;
+}
+
+/* O tamanho total é de duas vezes dos itens com flex: 1; */
+.basis-0-grow-28 {
+	flex-grow: 2;
+	flex-basis: 0;
+}
+
+/* A definição do width é ignorada. Porém ele ainda respeita 
+a definição de min-width. */
+.basis-0-width8 {
+	flex-grow: 1;
+	flex-basis: 0;
+	width: 120px;
+	min-width: 80px;
+}
+
+/* Flex basis 0 com flex-grow 0, não influenciar em nada 
+no item. Assim o mesmo fica do tamanho do seu conteúdo. */
+.basis-0-grow-08 {
+	flex-basis: 0;
+}
+
+.overlay8 .basis-08::before, .overlay8 .basis-0-grow-28::before, .overlay8 .basis-0-width8::before {
+	content: '';
+	display: block;
+	width: 65px;
+	height: 36px;
+	background: blue;
+	position: absolute;
+	opacity: .5;
+}
+
+.overlay8 .basis-0-grow-28::before {
+	border-right: 65px solid blueviolet;
+}
+
+/* FLEX BASIS 0 FIM */
+
+.basis-numero-container8 {
+	flex-wrap: wrap;
+}
+
+.basis-1108 {
+	flex-basis: 110px;
+}
+
+.basis-3008 {
+	flex-basis: 300px;
+}
+
+.basis-110-porcento8 {
+	flex-basis: calc(25% - 10px);
+}
+
+.basis-110-grow-18 {
+	flex-grow: 1;
+	flex-basis: 110px;
+}
+
+/* O Flex-basis não ultrapassa o tamanho do container. 
+Pois por padrão o flex-shrink é 1, ou seja, ele permite 
+que o item se ajuste para caber no container. */
+.basis-600-grow-18 {
+	flex-grow: 1;
+	flex-basis: 600px;
+}
+
+/* ESTILOS GERAIS */
+
+.item8 {
+	margin: 5px;
+	background: tomato;
+	text-align: center;
+	font-size: 1.5em;
+	position: relative;
+}
+
+/* Flex Container */
+.container8 {
+	max-width: 400px;
+	margin: 0 auto;
+	display: flex;
+	border: 1px solid #ccc;
+}
+
+/* ------------------------------------------------------------ */
+
