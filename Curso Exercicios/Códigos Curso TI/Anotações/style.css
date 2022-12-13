@@ -1,0 +1,10 @@
+.marcador {
+  background-color: tomato; 
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+hr {
+  width: 50%;
+  margin: 50px 0
+}
