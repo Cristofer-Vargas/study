@@ -633,7 +633,69 @@ Define a capacidade de <mark class="marcador">redução de tamanho</mark> do ite
 Flex é um <mark class="marcador">atalho para as propriedades</mark> `flex-grow`, `flex-shrink` e `flex-basics`. Normalmente será visto a propriedade flex nos items do que as propriedades individualmente
 
 ~~~css
+.container {
+	display: flex;
+}
 
+.item {
+	flex-grow: 1; /*  */
+	flex-shrink: 1; /*  */
+	flex-basis: 0; /*  */
+
+	/* | */
+	flex: 1;
+}
 ~~~
 
+---
+
+## <mark class="marcador">Order</mark>
+
+Modifica a <mark class="marcador">ordem dos flex itens</mark>. Sempre do menor para o maior, assim order: 1, aparece na frente de order: 5.
+
+~~~css
+.container {
+	display: flex;
+}
+
+/* Número para modificar a ordem padrão. Pode ser negativo.  */
+.item {
+	order: número;
+}
+
+/* 0 é o valor padrão e isso significa que a ordem dos itens será a ordem apresentada no HTML. Se você quiser colocar um item do meio da lista no início da mesma, sem modificar os demais, o ideal é utilizar um valor negativo para este item, já que todos os outros são 0. */
+.item {
+	order: 0;
+}
+~~~
+
+---
+
+## <mark class="marcador">Align-self</mark>
+
+O align-self serve para definirmos o <mark class="marcador">alinhamento específico de um único flex item</mark> dentro do nosso container. Caso um valor seja atribuído, ele <mark class="marcador">passara por cima</mark> do que for atribuído no align-items do container.
+
+Vale lembrar que o alinhamento acontece tanto em linha quanto em colunas. Por exemplo o flex-start quando os itens estão em linhas, alinha o item ao topo da sua linha. Quando em colunas, alinha o item ao início (esquerda) da coluna.
+
+```css
+.item {
+	align-self: auto;
+	/* Valor inicial padrão. Vai respeitar o que for definido pelo align-items no flex-container. */
+
+	align-self: flex-start;
+	/* Alinha o item ao início. */
+
+	align-self: flex-end;
+	/* Alinha o item ao final. */
+
+	align-self: center;
+	/* Alinha o item ao centro. */
+
+	align-self: baseline;
+	/* Alinha o item a linha de base. */
+
+	align-self: stretch;
+	/* Estica o item. */
+}
+```
 <!-- > Flex flow, é uma *shorthand* para `flex-direction` e `flex-wrap` -->
