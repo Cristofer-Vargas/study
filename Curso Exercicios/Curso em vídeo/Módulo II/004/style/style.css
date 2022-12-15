@@ -1,5 +1,18 @@
 * {
   /* outline-style: ridge; */
   border-style: ridge;
+  padding: 0;
+  margin: 0;
+}
+
+body {
   padding: 5px;
+  width: 100%;
+  background-color: beige;
+  border: 10px solid firebrick;
+}
+
+main {
+  background-color: white;
+  margin: 5px;
 }

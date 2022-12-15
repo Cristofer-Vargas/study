@@ -25,6 +25,7 @@
 }
 
 .max-width {
+  min-width: 300px;
   max-width: var(--max-width);
   margin: 0 auto;
   height: 100%;
