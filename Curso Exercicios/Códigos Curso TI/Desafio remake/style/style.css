@@ -66,7 +66,10 @@ li.logo a img{
 /* Conteúdo Principal */
 
 main {
-  background: url(https://img.freepik.com/fotos-gratis/fundo-preto-antigo-textura-do-grunge-papel-de-parede-escuro-quadro-negro-quadro-negro-parede-da-sala_1258-28313.jpg?w=1380&t=st=1670977509~exp=1670978109~hmac=a1ab303c9fe3c9d7b160d314e33b7dc8a42d2367664f2cc790f79313bfb8f2da);
+  background: url(../images/background-black.jpg);
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
   width: 100%;
   height: auto;
 }
@@ -76,8 +79,8 @@ main {
   margin: 0 auto;
   background-color: rgb(223, 223, 223);
   height: 100%;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 70px;
+  margin-bottom: 70px;
   border-radius: 15px;
 }
 
@@ -130,11 +133,15 @@ main {
   padding: 15px 25px;
   color: #fff;
   border-radius: 10px;
+  transition-duration: 0.5s;
+  transition-property: all;
 }
 
 .btn-input:hover {
   background: rgb(70, 70, 70);
   cursor: pointer;
+  transform: scale(1.2);
+  padding: 15px 50px;
 }
 
 .btn-buy {
@@ -142,10 +149,19 @@ main {
   background: #222;
 }
 
+.invisible {
+  display: none;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  background-color: #222;
+  color: #fff;
+}
+
 /* Rodapé */
 
 footer {
   background: #222;
   width: 100%;
-  height: 400px;
+  height: 200px;
 }
