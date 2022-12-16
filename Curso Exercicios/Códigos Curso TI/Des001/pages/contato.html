@@ -5,36 +5,37 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio | Desafio Grid</title>
-  <link rel="stylesheet" href="./style/style.css">
-  <link rel="shortcut icon" href="./images/icon-thebuild.svg" type="image/x-icon">
+  <title>Contato | Desafio Grid</title>
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../style/contato.css">
+  <link rel="shortcut icon" href="../images/icon-thebuild.svg" type="image/x-icon">
 </head>
 
 <body>
   <header>
     <div class="grid-headermenu">
       <div class="logomenu">
-        <img src="./images/logo-thebuild.svg" alt="Logo The Build">
+        <img src="../images/logo-thebuild.svg" alt="Logo The Build">
       </div>
       <div class="div-menulist">
         <ul class="undered-menulist">
           <li>
-            <a href="index.html">
+            <a href="../index.html">
               Início
             </a>
           </li>
           <li>
-            <a href="./Produto.html">
+            <a href="./contato.html">
               <strong>Produtos</strong>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="blog.html">
               Blog
             </a>
           </li>
           <li>
-            <a href="./pages/contato.html">
+            <a href="contato.html">
               Contato
             </a>
           </li>
@@ -45,8 +46,46 @@
 
 
   <main>
-    <section class="section-background">
-      
+    <section class="section-background formulario">
+      <form class="form-card" action="#" method="get">
+
+        <div class="form-content">
+          <h1>Formulario</h1>
+          <hr>
+
+          <div>
+            <label for="input-name">Nome: </label>
+            <input type="text" id="input-name">
+          </div>
+
+          <div>
+            <label for="input-email">Email: </label>
+            <input type="email" name="email-input" id="input-email">
+          </div>
+          <div>
+            <label for="input-password">Senha: </label>
+            <input type="password" name="password-input" id="input-password">
+          </div>
+          <div>
+            <label for="school">Escolaridade: </label>
+            <select name="escolaridade" id="school">
+              <option value="ef">Ensino Fundamental</option>
+              <option value="em">Ensino Médio</option>
+              <option value="es">Ensino Superior</option>
+            </select>
+
+            <div>
+              <label for="area-text">Assunto: </label>
+              <textarea name="text-area" id="area-text" cols="30" rows="10"></textarea>
+            </div>
+
+            <div>
+              <input type="reset" value="Limpar">
+              <input type="submit" value="Enviar">
+            </div>
+          </div>
+        </div>
+      </form>
     </section>
   </main>
 
@@ -82,7 +121,9 @@
       </div>
     </div>
     <p class="contribuitionforlayout">
-      <a target="_blank" rel="external" href="https://br.freepik.com/vetores-gratis/fundo-de-listras-grunge-diagonal-roxo_18054213.htm#query=textura&position=10&from_view=search&track=sph#position=10&query=textura">Imagem de vector_corp</a> no Freepik
+      <a target="_blank" rel="external"
+        href="https://br.freepik.com/vetores-gratis/fundo-de-listras-grunge-diagonal-roxo_18054213.htm#query=textura&position=10&from_view=search&track=sph#position=10&query=textura">Imagem
+        de vector_corp</a> no Freepik
     </p>
   </footer>
 
