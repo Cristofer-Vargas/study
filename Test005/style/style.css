@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.page-layout {
+  display: grid;
+  grid-template-areas: 
+  'header'
+  'navegation'
+  'main'
+  'footer'
+  ;
+}
+
+.max-width {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cabeçalho */
+
+header {
+  width: 100%;
+  grid-area: header;
+  height: 100px;
+  background-color: rgb(46, 40, 33);
+}
+
+/* Navegação */
+
+nav {
+  width: 100%;
+  grid-area: navegation;
+  height: 50px;
+  background-color: #222;
+}
+
+/* Conteúdo Principal */
+
+main {
+  width: 100%;
+  grid-area: main;
+  height: auto;
+  background-color: rgb(59, 134, 109);
+  background-image: url(https://img.freepik.com/fotos-gratis/textura-preta_1205-327.jpg?1&w=1380&t=st=1671211078~exp=1671211678~hmac=0b5d16023f26fbc933407bd04475876c453349d1776dca679894d48f00b504bf);
+  background-size: cover;
+  background-position: center;
+}
+
+/* clip-path: circle(50%); */
+
+.background-content {
+  height: 100vh;
+  margin: 70px 0;
+  position: relative;
+}
+
+.flex-image {
+  color: rgb(219, 219, 219);
+  display: grid;
+  grid-template-columns: 7fr 6fr;
+}
+
+.produto-image{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.produto-image img{
+  transition-duration: 500ms;
+  width: 90%;
+}
+
+.produto-image:hover img{
+  transform: scale(1.1);
+}
+
+.shadow-circle {
+  width: 70%;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.61);
+  border-radius: 100%;
+  filter: blur(4px);
+}
+
+.description-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-right: 170px;
+}
+
+.description-content h1 {
+  font-weight: 800;
+  font-size: 2em;
+}
+
+.description-content h4{
+  text-decoration: line-through;
+}
+
+.description-content h2{
+  font-size: 1.9em;
+}
+
+
+
+/* Container Detalhes */
+
+.produto-detalhes-container {
+  display: none;
+  position: absolute;
+  color: rgb(219, 219, 219);
+  width: 100%;
+  height: auto;
+}
+
+.produto-detalhes-container li {
+  margin: 30px 0;
+}
+
+
+/* Navegação Absoluta do Main */
+
+.main-content-navegation{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+  height: auto;
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+}
+
+.flex-navegation-main {
+  margin-right: 25px;
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-bottom: 45px;
+  color: #fff;
+}
+
+.flex-navegation-main:last-child {
+  margin: 0;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+.nav-radio {
+  /* background-color: rgba(34, 34, 34, 0); */
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-left: 15px;
+}
+
+.nav-radio:hover {
+  transition-duration: 500ms;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* Rodapé */
+
+footer {
+  width: 100%;
+  grid-area: footer;
+  height: 200px;
+  background-color: rgb(0, 54, 54);
+}
