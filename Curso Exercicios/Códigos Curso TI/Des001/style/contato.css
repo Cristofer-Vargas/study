@@ -1,0 +1,26 @@
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-card {
+  width: 1200px;
+  max-width: 1200px;
+  height: 70%;  
+  border-radius: 20px;
+  backdrop-filter: blur(2px);
+}
+
+.form-content {
+  padding: 50px;
+}
+
+.form-content h1{
+  text-align: center;
+  font-size: 2em;
+}
+
+.form-content input, label, hr{
+  margin-bottom: 35px;
+}
