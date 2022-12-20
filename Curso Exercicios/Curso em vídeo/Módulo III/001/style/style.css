@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(https://img.terabyteshop.com.br/difer/peca_.svg);
+  background-size: 250px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+} */
+
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: url(https://img.terabyteshop.com.br/difer/peca_.svg) left bottom no-repeat;
+  background-size: 150px;
+}
