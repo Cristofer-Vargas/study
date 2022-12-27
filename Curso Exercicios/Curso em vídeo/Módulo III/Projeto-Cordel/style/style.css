@@ -102,3 +102,12 @@ footer {
   padding: 5px;
   font-family: sans-serif;
 }
+
+/* O tamanho das sessões poderiam ser baseadas 
+em padding com unidade em vh, para que se aumnete
+de acordo com a view height */
+
+/* O tamanho do background black da sessão
+de imagem, colocar display inline block, para que
+o block seja na linha e o tamanho varie de acordo 
+com o conteúdo */
