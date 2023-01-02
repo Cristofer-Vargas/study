@@ -16,19 +16,32 @@
     table {
       width: 500px;
       border-collapse: collapse;
+      position: relative;
+      border-radius: 20px;
     }
 
-    thead, tfoot {
+    thead,
+    tfoot {
       background-color: gray;
       color: white;
     }
 
-    td, th {
+    td,
+    th {
       padding: 10px;
     }
 
     tbody td {
       background-color: rgb(233, 233, 233);
+    }
+
+    thead {
+      position: sticky;
+      top: 0;
+    }
+
+    td.td-num {
+      text-align: right;
     }
   </style>
 
@@ -38,7 +51,8 @@
 
   <h1>Tabela Grande</h1>
 
-  <p>Esta é uma lista da população das unidades federativas brasileiras segundo estimativas de 1º de julho de 2021 do Instituto Brasileiro de Geografia e Estatística (IBGE).</p>
+  <p>Esta é uma lista da população das unidades federativas brasileiras segundo estimativas de 1º de julho de 2021 do
+    Instituto Brasileiro de Geografia e Estatística (IBGE).</p>
 
   <table>
 
@@ -152,26 +166,26 @@
       </tr>
       <tr>
         <td>Acre</td>
-        <td class="td-num">733 559	</td>
+        <td class="td-num">733 559 </td>
       </tr>
       <tr>
         <td>Amapá</td>
-        <td class="td-num">669 526	</td>
+        <td class="td-num">669 526 </td>
       </tr>
       <tr>
         <td>Roraima</td>
-        <td class="td-num">450 479	</td>
+        <td class="td-num">450 479 </td>
       </tr>
     </tbody>
 
     <tfoot>
       <tr>
         <th>Total de Habitantes</th>
-        <td>213.317.639</td>
+        <td class="td-num">213.317.639</td>
       </tr>
     </tfoot>
   </table>
-
+  
 </body>
 
 </html>

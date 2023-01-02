@@ -468,3 +468,166 @@ Existe a propriedade `scope` que serve para dizer o escopo de um determinado tit
 </table>
 
 > O TH de Estado e População dizem respeito ao escopo de suas proprias colunas, e o Total de Habitante que tambem é um TH / Titulo, tem seu escopo em linha, pois apresenta o dados posteriormente na mesma linha
+
+---
+
+## Efeito zebrado em tabela
+
+Este é uma propriedade de pseudo-classe no css, pode-se definir como 
+
+~~~css
+tbody > tr:nth-child(2n) {
+  background-color: gray;
+}
+
+/* Significa que todas as linhas (tr) diretamente dentro do corpo da tabela (tbody), terão as propriedades background-color, como gray
+
+A pseudo-classe nth-child diz que o grupo de elementos irmão, será aplicado o fundo cinza de 2 em 2. Intercalando e pulando essa propriedade para ser aplicada intercaladamente. Pode-se usar outros valores para deixar mais espaçada essas propriedades, por exemplo, para serem aplicadas de 4n, 4 em 4 linhas
+*/
+
+tbody > tr:nth-child(odd) {
+  background-color: gray;
+}
+
+/* Pode ser definido que as linhas impares (odd) ou pares (even) terão suas propriedades de fundo aplicadas neste grupo de elementos irmãos */
+~~~
+
+---
+
+## Mesclando linhas e colunas
+
+~~~html
+<table style="width: 500px; border-collapse: separate;">
+
+  <caption>
+    Mesclando tableas em HTML
+  </caption>
+
+  <tr>
+    <td>A</td>
+    <td>B</td>
+    <td>C</td>
+  </tr>
+  <tr style="background-color: gray;">
+    <td rowspan="2">D</td>
+    <td>E</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>H</td>
+    <td>I</td>
+  </tr>
+  <tr style="background-color: black;">
+    <td>J</td>
+    <td colspan="2">K</td>
+  </tr>
+
+</table>
+~~~
+
+<table style="width: 500px; border-collapse: separate;">
+
+  <caption>
+    Mesclando tableas em HTML
+  </caption>
+
+  <tr>
+    <td>A</td>
+    <td>B</td>
+    <td>C</td>
+  </tr>
+  <tr style="background-color: gray;">
+    <td rowspan="2">D</td>
+    <td>E</td>
+    <td>F</td>
+  </tr>
+  <tr>
+    <td>H</td>
+    <td>I</td>
+  </tr>
+  <tr style="background-color: black;">
+    <td>J</td>
+    <td colspan="2">K</td>
+  </tr>
+
+</table>
+
+~~~~html
+    <td rowspan="2">D</td>
+    <!-- rowspan refere-se a quantidade de linhas que a celula de dado irá ocupar -->
+
+    <td colspan="2">K</td>
+    <!-- colspan refere-se a quantidade de colunas que a celula de dado irá ocupar -->
+~~~~
+
+---
+
+## Escopo de THs
+
+Todo escope é de um table head, seja em scopo de linha ou coluna
+
+Exemplo: 
+~~~html
+<table>
+    <caption>
+      Filmes Favoritos
+    </caption>
+    <thead>
+
+      <!-- Escopo em row ou col é um titulo para a coluna ou para a linha, referindo-se que o titulo irá abordar os dados da coluna ou linha -->
+
+      <tr>
+        <th scope="col">Grupo</th>
+        <th scope="col">Nomes</th>
+        <th colspan="3" scope="colgroup">Filmes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th rowspan="3" scope="rowgroup">Mulheres</th>
+        <td>Ana Maria Santos</td>
+        <td>Alien</td>
+        <td>Rambo</td>
+        <td>Vingadores</td>
+      </tr>
+      <tr>
+
+        <td>Beatriz Souza</td>
+        <td>Hulk</td>
+        <td>Inception</td>
+        <td>Batman</td>
+      </tr>
+      <tr>
+
+        <td>Cláudia Melo</td>
+        <td>Oblivion</td>
+        <td>Matrix</td>
+        <td>Big Hero</td>
+      </tr>
+
+      <tr>
+        <th rowspan="3" scope="rowgroup">Homens</th>
+        <td>Bruno Mendonça</td>
+        <td>Intocáveis</td>
+        <td>Amnésia</td>
+        <td>Gladiador</td>
+      </tr>
+      <tr>
+        
+        <td>Daniel Lourenço</td>
+        <td>Wll-E</td>
+        <td>Oldboy</td>
+        <td>Dangal</td>
+      </tr>
+      <tr>
+        
+        <td>Fabiano</td>
+        <td>Star Wars 5</td>
+        <td>Taxi Driver</td>
+        <td>Toy Story</td>
+      </tr>
+    </tbody>
+  </table>
+        
+<!-- A Aplicação do rowgroup é quando ocorre de mesclar mais de uma linha para este head, ou seja seu titulo refere-se a um grupo de linhas. Da mesma forma serve o colgroup, para um grupo de colunas -->
+~~~
