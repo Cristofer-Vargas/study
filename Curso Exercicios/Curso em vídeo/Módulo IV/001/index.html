@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iFrames</title>
+
+  <style>
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: 3px groove black;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <h1>Navegação entre iFrames</h1>
+
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda nemo modi recusandae commodi delectus id inventore nostrum provident? Distinctio aliquam quasi quaerat animi praesentium assumenda labore consequatur incidunt, consectetur vitae.</p>
+
+  <ul>
+    <li><a href="paginas/primeira.html" target="iframe-pags">Primeira página</a></li>
+    <li><a href="paginas/segunda.html" target="iframe-pags">Segunda página</a></li>
+    <li><a href="paginas/terceira.html" target="iframe-pags">Terceira</a></li>
+  </ul>
+
+  <p>Iusto deserunt tenetur incidunt, numquam mollitia, dolorem sed, cupiditate possimus blanditiis necessitatibus distinctio sunt assumenda voluptates dicta labore! Eum dignissimos dolor laborum eveniet laudantium aut doloribus pariatur doloremque accusamus autem.</p>
+
+  <iframe 
+  srcdoc="
+  
+  <h1>Escolha uma opção para carregar no iFrame</h1>
+
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae sunt veritatis soluta deserunt in itaque deleniti odio cum atque quidem nisi libero dolore autem facere, quibusdam minus porro repudiandae unde.
+  </p>
+
+  " name="iframe-pags" frameborder="1" scrolling></iframe>
+
+  <!-- name serve para este iframe ser o alvo dos links, ou seja, inves do target ser _blank (para uma nova janela), ele seria o nome do iFrame e abriria neste iFrame alvo -->
+
+  <!-- srcdoc é um atributo que serve e permite que seja introduzido conteudo HTML, e irá exibir no iFrame, até que outra página o substitua -->
+  
+  <p>Quis necessitatibus accusantium, sunt a quaerat, quos sit error reprehenderit illum ex officiis ratione autem eaque voluptas! Unde debitis voluptatibus recusandae pariatur culpa neque architecto hic rerum vel! Laborum, voluptatum!</p>
+
+  <!-- <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQlYyLECNCSqR4hydudQa44151ifFj2LxB5GYua-2RzXCHrprcry5-wTPH-37X31Uys9ti-YWmpnNWe/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="1569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> -->
+</body>
+
+</html>
