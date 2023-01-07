@@ -395,3 +395,60 @@ O input range tambem possui atributos para mudar seus dados iniciais com `min=""
 
 ## Elementos fora da tag input
 
+### Select e Datalist
+
+Essas tags, são listas que permitem o usuário selecionar as opções que estão disponiveis pelo site. Essas duas tags possuem tambem as tags `<optgroup>` e `<option>`.
+
+`Optgroup` - Agrupa as options e utilizando atributo `label=""` você define um nome para esse grupo. Por exemplo, um grupo de estados faz parte de uma região, que seria o optgroup
+
+`Option` - São as opções disponiveis para que o usuário selecione as informações ja estabelecidas, elas possuem o atributo value, que define um valor para cada opção, fora o nome dela, por exmplo `<option value="RJ">Rio de Janeiro</option>`
+
+~~~html
+<label for="iest">Estado</label>
+<select name="estado" id="iest">
+
+  <optgroup label="Região Sudeste">
+    <option value="MG">Minas Gerais</option>
+    <option value="RJ">Rio de Janeiro</option>
+    <option value="SP">São Paulo</option>
+  </optgroup>
+  
+  <optgroup label="Região Nordeste">
+    <option value="MA">Maranhão</option>
+    <option value="PE">Pernambuco</option>
+    <option value="RN">Rio Grande do Norte</option>
+  </optgroup>
+
+</select>
+~~~
+
+---
+
+A diferença entre a tag `<select>` e a tag `<datalist>`, é que a select apenas permite opções **pré definidas**, e a datalist permite **além das pré definidas**, você enviar uma opção que **não está entre as disponiveis**
+
+Para o `Datalist`, você deve conectar o `id` dele com a propriedade `list=""` de um input text. Ex:
+
+~~~html
+<label for="iprof">Profissão: </label>
+<input type="text" name="prof" id="iprof" list="lstprof">
+
+<datalist id="lstprof">
+  <option value="ADM">Administrador</option>
+  <option value="CONT">Contador</option>
+  <option value="DEV">Desenvolvedor</option>
+  <option value="PROF">Professor</option>
+</datalist>
+
+<!-- O valor pode ser tirado, pois na hora de selecionar uma opção ele irá selecionar pelo que tiver no value="" -->
+~~~
+
+### Text Area
+
+Vale dizer que é melhor deixar o método do formulário como POST, pois pode haver muitos bytes para enviar, devido a quantidade de caracteres nesse tag
+
+Você também pode definir um valor máximo de caracteres com `maxlength=""` para limitar o texto
+
+~~~html
+<label for="imsg">Menssagem: </label> <br>
+<textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+~~~
