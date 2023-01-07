@@ -91,6 +91,11 @@ Para métodos `GET`, pode ser usados quando os dados tratados no fomrulario não
 
 Para métodos `POST`, você usa para enviar fotos e arquivos, pois supera os `3 KBytes`, e também para dados razoavelmente sensiveis, pois o ideal é usar métodos `HTTPS`, mas o POST já ajuda um pouco
 
+## Fieldset
+
+Existe tambem uma tag chamada `<fieldset>`, que cria um campo e agrupa os elementos de um formulário, podendo tambem colocar a tag `<legend>` para definir o nome do campo, ou a função dele
+
+
 <style>
   .inputs > input {
     display: block;
@@ -119,6 +124,8 @@ Em alguns inputs, como text e password, se não todos os outros, possuem certos 
 `placeholder` - Serve como dica, e mostra a frase no campo e some quando o campo for preenchido
 
 `autocompelte` - Se colocado como atributo no input, ele serve para o navegador guardar essas informações para serem autocompletadas posteriormente em outros sites pro exemplo. É necessário que o form tenha `autocomplete="on"`
+
+`value` - Pode ser usado em numeros, datas e palavras, e define o valor já estabelecido naquele campo, esse valor irá tirar o placeholder se você a penas o substituir
 
 ### Botão - button
 
@@ -151,6 +158,8 @@ Em alguns inputs, como text e password, se não todos os outros, possuem certos 
 ~~~html
   <input type="color" name="color" id="color">
 ~~~
+
+Para cor podemos definir uma cor inicial que ela comece ao ser carregado, com o atributo `value=""` e um código `hexadecial`
 
 
 ### Data - Date
@@ -206,6 +215,8 @@ Em alguns inputs, como text e password, se não todos os outros, possuem certos 
 ~~~html
   <input type="file" name="file" id="file">
 ~~~
+
+Sempre que for possivel a utilização de um input de arquivo, é excenssial que você mude o método do do formulário para `POST`
  
 
 ### Escondido - Hidden
@@ -251,6 +262,10 @@ Em alguns inputs, como text e password, se não todos os outros, possuem certos 
   <input type="number" name="number" id="number">
 ~~~
 
+Inputs de número, ao inves de utilizar `minlenght` e `maxlenght`, é utilizado `min` e `max`
+
+`step` - Esse atributo diz respeito ao quanto os números podem ir intercalando. 0.2, 0.5, 0.1 (no caso de nota, referente a média, é 0.5 por exemplo)
+
 
 ### Senha - Password
 
@@ -263,7 +278,7 @@ Em alguns inputs, como text e password, se não todos os outros, possuem certos 
 ~~~
 
 
-### Raio - Radio
+### Radio - Radio
 
 <div class="inputs">
   <input type="radio" name="radio" id="radio">
@@ -272,6 +287,8 @@ Em alguns inputs, como text e password, se não todos os outros, possuem certos 
 ~~~html
   <input type="radio" name="radio" id="radio">
 ~~~
+
+Inputs radio de mesmo grupo devem ter **nomes / names** iguais e para não haver problemas, você deve adicionar o atributo `checked` em algum por padrão
 
 
 ### Alcance - Range
@@ -283,6 +300,8 @@ Em alguns inputs, como text e password, se não todos os outros, possuem certos 
 ~~~html
   <input type="range" name="range" id="range">
 ~~~
+
+O input range tambem possui atributos para mudar seus dados iniciais com `min=""` para um valor minimo, e `max=""` para um valor maximo, esses atributos podem ajudar a dividir ou fracionar o range, assim como tambem podemos definir em qual valor ele pode começar, com o `value=""`. Por padrão ele começa sempre na metade
 
 
 ### Resetar - Reset
@@ -329,6 +348,8 @@ Em alguns inputs, como text e password, se não todos os outros, possuem certos 
 ~~~
 
 
+
+
 ### Texto - Text
 
 <div class="inputs">
@@ -371,3 +392,6 @@ Em alguns inputs, como text e password, se não todos os outros, possuem certos 
 ~~~html
   <input type="week" name="week" id="week">
 ~~~
+
+## Elementos fora da tag input
+
