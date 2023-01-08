@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cor-destaque: #DF63F7;
+  --cor-variant-2: #B14FC4;
+  --cor-variant-3: #6C3078;
+  
+  --cor-variant-2-hover: #8f429e;
+  --cor-variant-3-hover: #581166;
+  --cor-variante-2-shadow: #b14fc494;
+}
+
+div.max-width {
+  max-width: 1200px;
+  width: 100%;
+}
+
+img.bakcground-svg-circle {
+  position: absolute;
+  height: 100%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main section.login-section {
+  width: 100%;
+  /* background-color: bisque; */
+  
+  display: flex;
+  justify-content: center;
+}
+
+div.section-distribuition {
+  display: grid;
+  grid-template-columns: 4fr 4fr;
+}
+
+div.section-distribuition div.svg-div {
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+}
+
+div.svg-div img{
+  width: 400px;
+}
+
+div.section-distribuition form.login-form {
+  /* background-color: aquamarine; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+form.login-form .form-ajust {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-ajust .loggin-title {
+  width: 15%;
+  padding: 10px 0;
+  border: solid var(--cor-variant-3);
+  border-width: 0 0 2px 0;
+  /* border-radius: 10px; */
+  
+  color: var(--cor-variant-3);
+  text-align: center;
+  font-size: 2em;
+  font-weight: 600;
+
+  margin: 0 0 30px 0;
+}
+
+div.inputs-form div.inputs-individual {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #fff;
+  border-radius: 30px;
+  height: 30px;
+  margin: 20px;
+
+  box-shadow: 2px 2px 4px 1px var(--cor-variante-2-shadow);
+}
+
+div.form-ajust div.inputs-form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputs-form input{
+  width: 90%;
+  height: 100%;
+  display: block;
+
+  border: 0px solid;
+  background-color: transparent;
+}
+
+div.inputs-individual input.input-preenc:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  /* background-color: #f0f0f0; */
+}
+
+div.form-ajust div.forgot {
+  width: 60%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+
+  margin-top: 20px;
+}
+
+div.forgot a {
+  color: var(--cor-variant-3);
+  font-weight: 300;
+  text-decoration: none;
+}
+
+div.forgot input {
+  color: #fff;
+
+  background-color: var(--cor-variant-2);
+  
+  padding: 10px 25px;
+
+  border: 0px;
+  border-radius: 30px;
+  font-weight: bolder;
+}
+
+div.forgot input:hover {
+  background-color: var(--cor-variant-2-hover);
+  cursor: pointer;
+  transition: 1s;
+}

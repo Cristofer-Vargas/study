@@ -1,0 +1,15 @@
+@media (max-width: 630px) {
+  
+  div.svg-div img{
+    width: 60%;
+  }
+
+  div.form-ajust div.forgot {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+
+  div.forgot input {
+    width: 100%;
+  }
+}

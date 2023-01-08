@@ -1,0 +1,19 @@
+@media (max-width: 1024px) {
+  div.section-distribuition {
+    grid-template-columns: 1fr;
+  }
+
+  div.svg-div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  img.bakcground-svg-circle {
+    transform: translate(-80%);
+  }
+
+  div.forgot input {
+    width: 30%;
+  }
+}
