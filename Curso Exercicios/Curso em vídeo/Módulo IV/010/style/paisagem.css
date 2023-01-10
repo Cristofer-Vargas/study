@@ -1,0 +1,6 @@
+/* Folha de estilo para dispositivos com orientação paisagem (landscape) */
+
+body {
+  background-image: url(../images/alanzoka-landscape.png);
+  background-position: left bottom;
+}

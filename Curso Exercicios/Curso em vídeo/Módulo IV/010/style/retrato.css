@@ -1,0 +1,6 @@
+/* Folha de estilo para dispositivos com orientação retrato (portrait) */
+
+body {
+  background-image: url(../images/alanzoka-portrait.png);
+  background-position: center bottom;
+}

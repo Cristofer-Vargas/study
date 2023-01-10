@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header h1{
+  text-align: center;
+  margin: 20px 0;
+}
+
+menu{
+  padding: 10px;
+  background-color: chocolate;
+}
+
+menu ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 20px 10px;
+  padding: 0;
+}
+
+menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+article {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+article h2 {
+  text-align: center;
+  margin: 25px 0;
+}
+
+article p {
+  line-height: 1.5em;
+  margin: 15px 0;
+}
